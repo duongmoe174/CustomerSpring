@@ -49,9 +49,4 @@ public class AppConfig implements WebMvcConfigurer, ApplicationContextAware {
         templateResolver.setTemplateMode(TemplateMode.HTML);
         return templateResolver;
     }
-
-    @Bean
-    public CustomerService customerService() {
-        return new SimpleCustomerServiceImpl();
-    }
 }
